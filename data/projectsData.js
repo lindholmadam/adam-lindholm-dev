@@ -20,7 +20,7 @@ const projectsData = [
         { name: "bcrypt", icon: "SiBcrypt" }
       ],
       demoLink: "https://mern-authentication-hgkc.onrender.com/",
-      githubLink: "#", 
+      githubLink: "https://github.com/lindholmadam/MERN-Authentication-System",
   
 
       // Youtube-video 
@@ -180,7 +180,7 @@ const projectsData = [
         { "name": "Passport.js", "icon": "SiPassport" }
       ],
       "demoLink": "https://artportfolio-ao0q.onrender.com/",
-      "githubLink": "#",
+      "githubLink": "https://github.com/lindholmadam/artportfolio",
 
       "youtubeId": "3-w4cc1hMyE",
     
@@ -242,7 +242,6 @@ const projectsData = [
         { "name": "Framer Motion", "icon": "SiFramer" },
         { "name": "Vercel", "icon": "SiVercel" }
       ],
-      "demoLink": "https://adam-lindholm.dev",
       "githubLink": "https://github.com/lindholmadam/adam-lindholm-dev",
     
       // YouTube-video

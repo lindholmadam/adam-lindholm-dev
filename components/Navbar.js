@@ -47,7 +47,8 @@ export default function Navbar() {
         </button>
 
         <ul className="flex flex-col items-center justify-center h-full space-y-6 text-lg">
-          <li><Link href="/" onClick={toggleMenu} className="hover:text-blue-400">Home</Link></li>
+          <li><Link href="/" onClick={toggleMenu} className="hover:text-blue-400">Start</Link></li>
+          <li><Link href="/#about" onClick={toggleMenu} className="hover:text-blue-400">About</Link></li>
           <li>
             <Link 
               href={pathname.startsWith("/projects/") ? "/#projects" : "#projects"} 
@@ -57,7 +58,6 @@ export default function Navbar() {
               Projects
             </Link>
           </li>
-          <li><Link href="/#about" onClick={toggleMenu} className="hover:text-blue-400">About</Link></li>
           <li><Link href="/#contact" onClick={toggleMenu} className="hover:text-blue-400">Contact</Link></li>
         </ul>
       </div>
