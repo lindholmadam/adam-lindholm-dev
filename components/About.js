@@ -8,7 +8,6 @@ export default function About() {
       <h2 className="h2-start">About me<span className="text-orange-500">.</span></h2>
 
         <div className="flex flex-col lg:flex-row lg:gap-16">
-          {/* <ProfileImage /> */}
           <p className="max-w-2xl mx-auto decoration-[#dfdfdf]">
           Hi, I'm a web developer with a background in computer and systems sciences and marketing communication. 
           I'm passionate about technology, digital business, and how tech can drive both user experience and business growth. 

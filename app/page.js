@@ -1,17 +1,15 @@
 "use client";
 import Hero from "@/components/Hero";
 import ProjectsIntro from "@/components/ProjectsIntro";
-import Codepen from "@/components/CodePen";
 import About from "@/components/About";
-import TechGrid from "@/components/TechGrid";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 import { useEffect } from "react";
-import { usePathname } from "next/navigation"; // Rätt import för App Router
+import { usePathname } from "next/navigation";
 
 export default function HomePage() {
-  const pathname = usePathname(); // Hämta nuvarande sökväg
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -23,11 +21,11 @@ export default function HomePage() {
       }
     };
 
-    handleHashChange(); // Kör direkt vid sidladdning om hash finns
-    window.addEventListener("hashchange", handleHashChange); // Lyssna på hashändringar
+    handleHashChange(); 
+    window.addEventListener("hashchange", handleHashChange); 
 
-    return () => window.removeEventListener("hashchange", handleHashChange); // Städa upp eventlistener
-  }, [pathname]); // Uppdatera vid sidbyte
+    return () => window.removeEventListener("hashchange", handleHashChange); 
+  }, [pathname]); 
 
   return (
     <>

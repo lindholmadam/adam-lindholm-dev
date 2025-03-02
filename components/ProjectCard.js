@@ -15,10 +15,8 @@ export default function ProjectCard({
   return (
     <section className="project-wrapper">
       
-      {/* Innehållscontainer */}
       <div className="project-content">
         
-        {/* Projektinfo */}
         <div className="project-detail">
           <div className="project__detail-container">
             <h3 className="text-xl font-bold mb-5">{title}</h3>
@@ -45,7 +43,6 @@ export default function ProjectCard({
           </div>
         </div>
 
-        {/* Video-sektion */}
         <div className="project-preview">
           <div className="iframe-wrapper">
             <iframe 

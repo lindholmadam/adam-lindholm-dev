@@ -1,11 +1,11 @@
 const projectsData = [
     {
       slug: "mern-authentication",
-      // Huvudrubrik (visas överst)
+      // Huvudrubrik 
       title: "MERN Authentication System",
   
 
-      // Fakta/intro-del (placeras överst på sidan)
+      // Fakta/intro-del 
       description: "A full-stack authentication system built with React, Redux, Node.js, Express, and MongoDB.",
       role: "Full-stack Developer",
       year: "2023",
@@ -19,12 +19,12 @@ const projectsData = [
         { name: "JWT", icon: "SiJsonwebtokens" },
         { name: "bcrypt", icon: "SiBcrypt" }
       ],
-      demoLink: "#", // Lägg till riktig länk om tillgänglig
-      githubLink: "#", // Lägg till riktig GitHub-länk om tillgänglig
+      demoLink: "https://mern-authentication-hgkc.onrender.com/",
+      githubLink: "#", 
   
 
-      // Youtube-video (visas bredvid intro på större skärmar, under på mobil)
-      youtubeId: "iNfjhBDV0Y8", // Lägg till riktig video ID om tillgänglig
+      // Youtube-video 
+      youtubeId: "iNfjhBDV0Y8",
   
 
       // Introduction (inledning till projektet)
@@ -33,7 +33,6 @@ const projectsData = [
       building a modular authentication system—a core feature needed in most applications. 
       The result is a secure and scalable authentication solution using the MERN stack, 
       designed for easy integration into future projects.`,
-  
       features: [
         "User Authentication – Secure login and registration with JWT-based authentication.",
         "OAuth Integration – Google login for a faster, password-free experience.",
@@ -226,7 +225,72 @@ const projectsData = [
         "text": "The platform successfully provided the artist with an independent space to manage and showcase their work. It was a valuable experience in developing a full-stack system with a focus on both functionality and user experience.",
         "reflection": "If I were to build this project today, I would likely use a headless CMS for better scalability and replace session-based authentication with JWT for improved security."
       }
+    },
+
+    {
+      "slug": "adam-lindholm-portfolio",
+      "title": "adam-lindholm.dev",
+    
+      // Fakta/Intro-del
+      "description": "A modern and minimalistic developer portfolio built with Next.js and Tailwind CSS.",
+      "role": "Full-stack Developer",
+      "year": "2024",
+      "techStack": [
+        { "name": "Next.js", "icon": "SiNextdotjs" },
+        { "name": "React", "icon": "SiReact" },
+        { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+        { "name": "Framer Motion", "icon": "SiFramer" },
+        { "name": "Vercel", "icon": "SiVercel" }
+      ],
+      "demoLink": "https://adam-lindholm.dev",
+      "githubLink": "https://github.com/lindholmadam/adam-lindholm-dev",
+    
+      // YouTube-video
+      "youtubeId": "",
+    
+      // Introduction
+      "introduction": "As a web developer with a strong interest in both technology and business, I wanted a professional space to showcase my projects and skills. The goal was to create a sleek, minimalistic, and user-friendly portfolio that effectively presents my work while maintaining high performance and scalability.",
+    
+      // Features
+      "features": [
+        "Case Studies – Each project has a dedicated page with in-depth details.",
+        "Smooth Page Transitions – Enhances the navigation experience.",
+        "Optimized Performance – Fast load times using server-side rendering and static generation.",
+        "Contact Form – Secure email handling with Resend API.",
+        "SEO Optimization – Ensures visibility in search engines.",
+        "Fully Responsive – Works seamlessly across all devices."
+      ],
+    
+      // The Solution
+      "solution": {
+        "frontend": {
+          "text": "Built with Next.js and Tailwind CSS to ensure a fast, responsive, and modern design.",
+          "keyPoints": [
+            "Next.js for Static & Dynamic Rendering",
+            "Tailwind CSS for rapid styling and flexibility",
+            "Framer Motion for animations and micro-interactions",
+            "Dark Theme for a modern and minimal aesthetic"
+          ]
+        },
+        "backend": {
+          "text": "The backend is minimal, using Vercel for deployment and Resend API for email handling.",
+          "keyPoints": [
+            "Vercel for CI/CD and hosting",
+            "Custom domain setup with DNS configurations",
+            "Secure contact form with email automation"
+          ]
+        }
+      },
+    
+      // The Outcome
+      "outcome": {
+        "text": "Building adam-lindholm.dev was a valuable experience in structuring a scalable, maintainable portfolio site.",
+        "reflection": "Looking forward, I plan to keep improving the site by adding more interactivity, refining animations, and exploring further SEO and performance optimizations."
+      }
     }
+    
+
+    
     
   ];
   

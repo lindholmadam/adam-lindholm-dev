@@ -43,7 +43,6 @@ export default function Hero() {
 
     </div>
 
-      {/* Scroll-indikator */}
       <div
         className={`absolute bottom-0 flex flex-col items-center transition-opacity duration-500 ${
           isVisible ? "opacity-100" : "opacity-0"

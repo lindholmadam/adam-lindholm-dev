@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import projectsData from "@/data/projectsData";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,13 +10,9 @@ import { Button } from "@/components/ui/button";
 
 export default function ProjectCaseStudy() {
   const { slug } = useParams();
-  const [project, setProject] = useState(null);
 
-  useEffect(() => {
-    if (slug) {
-      const foundProject = projectsData.find((p) => p.slug === slug);
-      setProject(foundProject);
-    }
+  const project = useMemo(() => {
+    return projectsData.find((p) => p.slug === slug);
   }, [slug]);
 
   if (!project) {
@@ -57,7 +53,6 @@ export default function ProjectCaseStudy() {
                   );
                 })}
               </div>
-              {/* </p> */}
               <hr className="w-full h-[1px] bg-gray-400 border-0 my-4" />
             </div>
 
@@ -109,30 +104,32 @@ export default function ProjectCaseStudy() {
             </ul>
           </div>
 
-          {/* 4️⃣ The Challenge */}
-          <div className="max-w-3xl mt-16">
-            <h2 className="h2-p">The Challenge</h2>
-            <p className="p-p">{project.challenge.text}</p>
+        {/* 4️⃣ The Challenge (Endast om den finns) */}
+        {project.challenge && (
+            <div className="max-w-3xl mt-16">
+              <h2 className="h2-p">The Challenge</h2>
+              <p className="p-p">{project.challenge.text}</p>
 
-            {project.challenge.screenshots?.length > 0 && (
-              <div className="mt-6 text-center">
-                {project.challenge.screenshots.map((screenshot, index) => (
-                  <div key={index} className="mb-6">
-                    <Image
-                      src={`/${screenshot.src}`}
-                      alt={screenshot.description || "Challenge Screenshot"}
-                      width={800}
-                      height={500}
-                      className="rounded-lg shadow-lg"
-                    />
-                    {screenshot.description && (
-                      <p className="text-gray-400 text-sm mt-2">{screenshot.description}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+              {project.challenge.screenshots?.length > 0 && (
+                <div className="mt-6 text-center">
+                  {project.challenge.screenshots.map((screenshot, index) => (
+                    <div key={index} className="mb-6">
+                      <Image
+                        src={`/${screenshot.src}`}
+                        alt={screenshot.description || "Challenge Screenshot"}
+                        width={800}
+                        height={500}
+                        className="rounded-lg shadow-lg"
+                      />
+                      {screenshot.description && (
+                        <p className="text-gray-400 text-sm mt-2">{screenshot.description}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
 
           {/* 5️⃣ The Solution (Dynamisk rendering av sektioner) */}

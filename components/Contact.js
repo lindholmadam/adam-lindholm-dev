@@ -49,7 +49,6 @@ export default function ContactForm() {
       </p>
 
       <form onSubmit={handleSubmit} className="bg-gray-800 text-white p-8 rounded-lg w-full max-w-2xl mx-auto shadow-lg">
-        {/* Name */}
         <div className="relative mb-6">
           <input
             type="text"
@@ -62,7 +61,6 @@ export default function ContactForm() {
           <label className="form-label">Name</label>
         </div>
 
-        {/* Email */}
         <div className="relative mb-6">
           <input
             type="email"
@@ -75,7 +73,6 @@ export default function ContactForm() {
           <label className="form-label">Email</label>
         </div>
 
-        {/* Message */}
         <div className="relative mb-6">
           <textarea
             name="message"
@@ -87,7 +84,6 @@ export default function ContactForm() {
           <label className="form-label">Message</label>
         </div>
 
-        {/* Send button */}
         <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 p-3 rounded-md transition-all">
           Send
         </button>

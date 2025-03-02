@@ -4,18 +4,15 @@ export async function POST(req) {
   try {
     const { name, email, message } = await req.json();
 
-    // Grundläggande validering
     if (!name || !email || !message) {
       return Response.json({ error: "All fields are required" }, { status: 400 });
     }
 
-    // Initiera Resend med API-nyckeln från .env.local
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // Skicka e-post via Resend
     const emailResponse = await resend.emails.send({
-      from: "noreply@adam-lindholm.dev", // Nu använder vi din verifierade domän
-      to: "adam-lindholm@hotmail.com", // Ändra till din egen e-post där du vill ta emot meddelanden
+      from: "noreply@adam-lindholm.dev", 
+      to: "adam-lindholm@hotmail.com",
       subject: `New message from ${name}`,
       reply_to: email,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`

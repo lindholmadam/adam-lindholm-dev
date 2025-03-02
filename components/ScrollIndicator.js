@@ -13,9 +13,9 @@ export default function ScrollIndicator() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight * 0.3; // 30% av fönstret för mer precision
+      const scrollPosition = window.scrollY + window.innerHeight * 0.3; 
 
-      let newActiveSection = sections[0].id; // Default till första sektionen
+      let newActiveSection = sections[0].id; 
 
       sections.forEach(({ id }) => {
         const section = document.getElementById(id);
@@ -53,7 +53,6 @@ export default function ScrollIndicator() {
           onClick={handleClick(id)}
           className="relative flex items-center justify-end text-xs font-light transition-all duration-300"
         >
-          {/* Siffror */}
           <span
             className={`absolute transition-all duration-300 ${
               activeSection === id ? "opacity-0 translate-x-3" : "opacity-100 translate-x-0"
@@ -62,7 +61,6 @@ export default function ScrollIndicator() {
             0{index + 1}
           </span>
 
-          {/* Sektionstitel (visas när aktiv) */}
           <span
             className={`absolute transition-all duration-300 ${
               activeSection === id ? "opacity-100 translate-x-0 text-blue-500" : "opacity-0 -translate-x-3"

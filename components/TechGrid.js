@@ -1,5 +1,5 @@
 import { FaJava, FaPython, FaReact, FaNodeJs, FaGit } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiBootstrap, SiMongodb, SiExpress, SiVercel, SiPostman, SiFigma, SiMysql, SiJavascript, SiShopify } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiBootstrap, SiMongodb, SiExpress, SiPostman, SiFigma, SiMysql, SiJavascript, SiShopify } from "react-icons/si";
 
 const technologies = [
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
@@ -18,7 +18,6 @@ const technologies = [
   { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
   { name: "REST APIs", icon: <span className="text-gray-400">🌐</span> },
-  // { name: "Vercel", icon: <SiVercel className="text-white" /> },
 ];
 
 export default function TechGrid() {
