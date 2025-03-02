@@ -19,7 +19,7 @@ export default function ProjectsIntro() {
           youtubeId="iNfjhBDV0Y8"
           caseStudyLink="/projects/mern-authentication"
           demoLink="https://mern-authentication-hgkc.onrender.com/"
-          githubLink="#"
+          githubLink="https://github.com/lindholmadam/MERN-Authentication-System"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
         />
 
@@ -38,7 +38,7 @@ export default function ProjectsIntro() {
           youtubeId="3-w4cc1hMyE"
           caseStudyLink="/projects/portfolio-blog-platform"
           demoLink="https://artportfolio-ao0q.onrender.com/"
-          githubLink="#"
+          githubLink="https://github.com/lindholmadam/artportfolio"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
         />
 

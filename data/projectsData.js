@@ -234,7 +234,7 @@ const projectsData = [
       // Fakta/Intro-del
       "description": "A modern and minimalistic developer portfolio built with Next.js and Tailwind CSS.",
       "role": "Full-stack Developer",
-      "year": "2024",
+      "year": "2025",
       "techStack": [
         { "name": "Next.js", "icon": "SiNextdotjs" },
         { "name": "React", "icon": "SiReact" },

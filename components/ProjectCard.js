@@ -31,12 +31,12 @@ export default function ProjectCard({
               )}
               {demoLink && (
                 <Button asChild variant="default">
-                  <Link href={demoLink}>Live Demo</Link>
+                  <Link href={demoLink} target="_blank">Live Demo</Link>
                 </Button>
               )}
               {githubLink && (
                 <Button asChild variant="default" className="github-button ">
-                  <Link href={githubLink}><FaGithub size={20} /></Link>
+                  <Link href={githubLink} target="_blank"><FaGithub size={20} /></Link>
                 </Button>
               )}
             </div>

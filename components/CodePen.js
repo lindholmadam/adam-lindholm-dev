@@ -12,7 +12,7 @@ export default function CodePenIntro() {
       <p className="mb-6">
         Explore my interactive front-end experiments and mini-projects on CodePen.
       </p>
-      <Link href="https://codepen.io/yourusername" target="_blank">
+      <Link href="https://codepen.io/lindholmadam" target="_blank">
         <Button className="bg-white text-black hover:bg-gray-200">
           View on CodePen ↗
         </Button>
