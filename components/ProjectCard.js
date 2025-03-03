@@ -13,9 +13,8 @@ export default function ProjectCard({
 }) {
 
   return (
-    <FadeInWhenVisible>
     <section className="project-wrapper">
-      
+      <FadeInWhenVisible>
       <div className="project-content">
         
         <div className="project-detail">
@@ -56,7 +55,7 @@ export default function ProjectCard({
         </div>
 
       </div>
+      </FadeInWhenVisible>
     </section>
-    </FadeInWhenVisible>
   );
 }

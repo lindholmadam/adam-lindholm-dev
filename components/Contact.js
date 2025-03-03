@@ -43,9 +43,9 @@ export default function ContactForm() {
 
   return (
     <section className="section text-white items-center">
-      <h2 className="h2-start text-center">Get in touch</h2>
+      <h2 className="h2-start text-center">Send me a message!</h2>
       <p className="text-lg sm:text-xl mb-6 max-w-2xl">
-        Want to collaborate or have any questions? Send a message and let's talk!
+      Got a question or proposal, or just want to say hello? Go ahead.
       </p>
 
       <form onSubmit={handleSubmit} className="border border-gray-500 text-white p-8 rounded-lg w-full max-w-2xl mx-auto shadow-lg">

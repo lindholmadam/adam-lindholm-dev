@@ -1,5 +1,6 @@
 import { FaJava, FaPython, FaReact, FaNodeJs, FaGit } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiBootstrap, SiMongodb, SiExpress, SiPostman, SiFigma, SiMysql, SiJavascript, SiShopify } from "react-icons/si";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 
 const technologies = [
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
@@ -23,7 +24,10 @@ const technologies = [
 export default function TechGrid() {
   return (
     <section className="max-w-4xl flex flex-col items-center justify-center mt-40">
-      <h3 className="text-xl font-medium text-center pb-10 relative z-10">Technologies I've Worked With</h3>
+      <FadeInWhenVisible>
+        <h3 className="text-xl font-medium text-center pb-10 relative z-10">Technologies I've Worked With</h3>
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
       <div className="inset-0 flex flex-wrap justify-center opacity-3 text-gray-500">
         {technologies.map((tech, index) => (
           <div key={index} className="m-5 flex flex-col items-center text-center text-2xl">
@@ -32,6 +36,7 @@ export default function TechGrid() {
           </div>
         ))}
       </div>
+      </FadeInWhenVisible>
     </section>
   );
 }
