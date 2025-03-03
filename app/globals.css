@@ -53,7 +53,7 @@ p {
 }
 
 .socials {
-  @apply text-[#FAFFC5] text-xl hover:text-white transition-colors;
+  @apply text-[#FFAB5B] text-xl hover:text-white transition-colors;
 }
 
 /* Anpassade animeringar */

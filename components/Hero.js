@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <section className="relative section h-screen items-center text-white relative ">
 
-    <div className="flex flex-col sm:flex-row w-full">
+    <div className="flex flex-col mb-[4rem] sm:mb-0 sm:flex-row w-full">
 
       <div className="flex flex-col sm:w-1/2">
         <h1 className="text-xl mb-3">Hi, I'm</h1>
