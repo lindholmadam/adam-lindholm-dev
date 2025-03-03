@@ -2,7 +2,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 sm:gap-7">
       <a href="https://www.instagram.com/lindholmadam/" target="_blank" rel="noopener noreferrer">
         <FaInstagram className="socials"/>
       </a>

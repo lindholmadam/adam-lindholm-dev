@@ -1,12 +1,21 @@
 "use client";
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
+import { useEffect, useState } from "react";
+
+import { motion } from "framer-motion";
+
 import projectsData from "@/data/projectsData";
 import Link from "next/link";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { HiCheckCircle } from "react-icons/hi";
 import { Button } from "@/components/ui/button";
+
+
+
+
+
 
 export default function ProjectCaseStudy() {
   const { slug } = useParams();
@@ -19,14 +28,39 @@ export default function ProjectCaseStudy() {
     return <div className="text-center">Project not found.</div>;
   }
 
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [hideOverlay, setHideOverlay] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 500);
+  }, []);
+
+
+
+
+
   return (
     <div className="bg-[#080C13] w-full text-white">
+
+    {!hideOverlay && (
+      <motion.div
+        initial={{ opacity: 1 }}
+        animate={{ opacity: isLoaded ? 0 : 1 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="fixed top-0 left-0 w-full h-full bg-[#080C13] z-50"
+        onAnimationComplete={() => setTimeout(() => setHideOverlay(true), 1500)} 
+      />
+    )}
+
+
       <section className="section min-h-screen flex flex-col items-center pt-20">
-        <h1 className="text-4xl font-bold">{project.title}</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold">{project.title}</h1>
         <p className="p-p text-lg mt-4">{project.description}</p>
 
-        {/* 1️⃣ Introduction (Overview) */}
-        <div className="w-full max-w-4xl flex flex-col md:flex-row items-center justify-between gap-8 mt-10">
+        {/* Introduction (Overview) */}
+        <div className="w-full max-w-4xl flex flex-col md:flex-row items-center justify-between gap-8 mt-7 sm: mt-10">
           <div>
 
             <div className="mt-4">
@@ -40,15 +74,14 @@ export default function ProjectCaseStudy() {
                 <strong className="text-white">Year:</strong> {project.year}
               </p>
               <hr className="w-full h-[1px] bg-gray-400 border-0 my-4" />
-              {/* <p className="p-p"> */}
               <div className="flex flex-wrap gap-4">
                 <strong className="text-white">Tech Stack:</strong>
                 {project.techStack.map((tech, index) => {
-                  const IconComponent = require("react-icons/si")[tech.icon]; // Dynamisk import av ikonen
+                  const IconComponent = require("react-icons/si")[tech.icon]; 
                   return (
                     <div key={index} className="flex items-center gap-2">
                       {IconComponent && <IconComponent className="text-xl text-white" />}
-                      <span className="text-[9px] text-white">{tech.name}</span>
+                      <span className="text-[10px] text-white">{tech.name}</span>
                     </div>
                   );
                 })}
@@ -56,13 +89,19 @@ export default function ProjectCaseStudy() {
               <hr className="w-full h-[1px] bg-gray-400 border-0 my-4" />
             </div>
 
-            {/* Buttons for Live Demo & GitHub */}
             <div className="flex gap-4 mt-8">
-              {project.demoLink && (
-                <Button asChild variant="default" className="bg-white text-black hover:bg-gray-200">
-                  <Link href={project.demoLink}>Live Demo</Link>
-                </Button>
-              )}
+              <div className="flex flex-col gap-2 text-center">
+                {project.demoLink && (
+                  <Button asChild variant="default" className="bg-white text-black hover:bg-gray-200">
+                    <Link href={project.demoLink}>Live Demo</Link>
+                  </Button>
+                )}
+
+                {(project.title === "MERN Authentication System" || project.title === "Art Portfolio & Blog Platform") && (
+                  <span className="text-xs text-gray-300">(Slow Bootup)</span>
+                )}
+              </div>
+
               {project.githubLink && (
                 <Button asChild variant="default" className="bg-white text-black hover:bg-gray-200 flex items-center gap-2 px-4 py-2">
                   <Link href={project.githubLink} className="flex items-center gap-2">
@@ -73,25 +112,45 @@ export default function ProjectCaseStudy() {
             </div>
           </div>
 
+
+
+
           {/* YouTube Video */}
-          {project.youtubeId && (
+          {project.youtubeId ? (
             <iframe
               src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeId}&controls=0&rel=0&modestbranding=1&playsinline=1`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="no-interaction w-full md:w-[60%] aspect-video rounded-lg shadow-lg"
             ></iframe>
+          ) : (
+            /* Image */
+            project.imageSrc && (
+              <div className="w-full md:w-[60%] aspect-video rounded-lg shadow-lg overflow-hidden">
+                <Image 
+                  src={project.imageSrc} 
+                  alt="adam-lindholm.dev"
+                  layout="responsive"
+                  width={800} 
+                  height={450} 
+                  priority
+                />
+              </div>
+            )
           )}
+
         </div>
 
+
+
         <div className="w-full max-w-3xl">
-          {/* 2️⃣ Introduction */}
+          {/* 2️Introduction */}
           <div className="max-w-3xl mt-16">
             <h2 className="h2-p">Introduction</h2>
             <p className="p-p">{project.introduction}</p>
           </div>
 
-          {/* 3️⃣ Features */}
+          {/* Features */}
           <div className="max-w-3xl mt-16">
             <h2 className="h2-p">Features</h2>
             <ul className="p-p ul-p flex flex-col gap-2 list-outside">
@@ -104,7 +163,7 @@ export default function ProjectCaseStudy() {
             </ul>
           </div>
 
-        {/* 4️⃣ The Challenge (Endast om den finns) */}
+        {/* The Challenge (Endast om den finns) */}
         {project.challenge && (
             <div className="max-w-3xl mt-16">
               <h2 className="h2-p">The Challenge</h2>
@@ -132,7 +191,7 @@ export default function ProjectCaseStudy() {
           )}
 
 
-          {/* 5️⃣ The Solution (Dynamisk rendering av sektioner) */}
+          {/* The Solution (Dynamisk rendering av sektioner) */}
           <div className="max-w-3xl mt-16">
             <h2 className="h2-p">The Solution</h2>
 
@@ -220,7 +279,7 @@ export default function ProjectCaseStudy() {
             )}
           </div>
 
-          {/* 6️⃣ The Outcome */}
+          {/* The Outcome */}
           <div className="max-w-3xl mt-16">
             <h2 className="h2-p">The Outcome</h2>
             <p className="p-p">{project.outcome.text}</p>

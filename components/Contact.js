@@ -44,7 +44,7 @@ export default function ContactForm() {
   return (
     <section className="section text-white items-center">
       <h2 className="h2-start text-center">Send me a message!</h2>
-      <p className="text-lg sm:text-xl mb-6 max-w-2xl">
+      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 text-lg md:text-xl">
       Got a question or proposal, or just want to say hello? Go ahead.
       </p>
 

@@ -25,7 +25,7 @@ export default function TechGrid() {
   return (
     <section className="max-w-4xl flex flex-col items-center justify-center mt-40">
       <FadeInWhenVisible>
-        <h3 className="text-xl font-medium text-center pb-10 relative z-10">Technologies I've Worked With</h3>
+        <h3 className="text-xl sm:text-2xl font-medium text-center pb-10 relative z-10">Technologies I've Worked With</h3>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
       <div className="inset-0 flex flex-wrap justify-center opacity-3 text-gray-500">

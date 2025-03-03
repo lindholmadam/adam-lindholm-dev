@@ -9,9 +9,9 @@ export default function ProjectsIntro() {
   return (
     <section className="section text-white">
       <FadeInWhenVisible>
-      <h2 className="h2-start text-center">Featured Projects</h2>
-      <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
-        Here are some of the selected projects that showcase my passion for front-end development.
+      <h2 className="h2-start text-center">Selected Projects</h2>
+      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 text-lg md:text-xl"> 
+        A selection of projects showcasing my work in development and digital solutions.
       </p>
       </FadeInWhenVisible>
 
@@ -46,11 +46,11 @@ export default function ProjectsIntro() {
 
         <ProjectCard 
           title="adam-lindholm.dev"
-          description="A modern and minimalistic developer portfolio showcasing my work in web development, UX/UI design, and digital strategy. Built with Next.js and Tailwind CSS"
-          youtubeId="YOUR_YOUTUBE_VIDEO_ID"
+          description="A modern and minimalistic developer portfolio showcasing my work in web development, UX/UI design, and digital strategy. Built with Next.js and Tailwind CSS."
           caseStudyLink="/projects/adam-lindholm-portfolio"
           githubLink="https://github.com/lindholmadam/adam-lindholm-dev"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
+          imageSrc="/adam-dev.png"
         />
           <CodePen />
       </div>

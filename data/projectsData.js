@@ -98,7 +98,7 @@ const projectsData = [
 
     {
       "slug": "ecommerce-case-study",
-      "title": "E-commerce Business",
+      "title": "E-commerce Store",
       "description": "An online store specializing in home decor, built with Shopify and optimized for automation.",
       "role": "Founder & Developer",
       "year": "2024",
@@ -115,14 +115,15 @@ const projectsData = [
     
       "youtubeId": "gKGUAbRZ1Hs",
     
-      "introduction": "I started this e-commerce store as a way to explore online business, automation, and digital marketing. The goal was to build a self-sustaining store with minimal manual effort, allowing me to focus on strategy rather than day-to-day operations.",
+      "introduction": "I started this e-commerce store as a way to explore online business, automation, and digital marketing. The goal was to build a self-sustaining store with minimal manual effort, allowing me to focus on strategy rather than day-to-day operations. I aimed to curate a high-quality product portfolio within the home decor niche while ensuring a streamlined shopping experience.",
     
       "features": [
-        "Automated product imports and inventory management",
-        "Optimized checkout process with customized Shopify theme",
-        "Multi-language support with automatic and manual translations",
-        "Custom navigation and UX improvements for better conversion rates",
-        "Integrated analytics and ad tracking for data-driven marketing"
+        "Manually imported and optimized over 1600 products from the supplier",
+        "Automated inventory management to sync stock levels and avoid overselling",
+        "Optimized checkout process with a customized Shopify theme for higher conversions",
+        "Multi-language support with automatic and manual translations for a localized shopping experience",
+        "Custom navigation and UX improvements tailored to interior design shoppers",
+        "Integrated analytics and ad tracking for data-driven marketing and campaign optimization",
       ],
     
       "challenge": {
@@ -246,9 +247,10 @@ const projectsData = [
     
       // YouTube-video
       "youtubeId": "",
+      "imageSrc": "/adam-dev.png", 
     
       // Introduction
-      "introduction": "As a web developer with a strong interest in both technology and business, I wanted a professional space to showcase my projects and skills. The goal was to create a sleek, minimalistic, and user-friendly portfolio that effectively presents my work while maintaining high performance and scalability.",
+      "introduction": "I wanted a professional space to showcase my projects and skills. The goal was to create a sleek, minimalistic and user-friendly portfolio that effectively presents my work while maintaining high performance and scalability.",
     
       // Features
       "features": [
@@ -263,7 +265,7 @@ const projectsData = [
       // The Solution
       "solution": {
         "frontend": {
-          "text": "Built with Next.js and Tailwind CSS to ensure a fast, responsive, and modern design.",
+          "text": "Built with Next.js and Tailwind CSS to ensure a fast, responsive and modern design.",
           "keyPoints": [
             "Next.js for Static & Dynamic Rendering",
             "Tailwind CSS for rapid styling and flexibility",
@@ -283,7 +285,7 @@ const projectsData = [
     
       // The Outcome
       "outcome": {
-        "text": "Building adam-lindholm.dev was a valuable experience in structuring a scalable, maintainable portfolio site.",
+        "text": "Building adam-lindholm.dev was a valuable experience in structuring a scalable, maintainable portfolio site with Next.js.",
         "reflection": "Looking forward, I plan to keep improving the site by adding more interactivity, refining animations, and exploring further SEO and performance optimizations."
       }
     }

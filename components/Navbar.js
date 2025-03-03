@@ -1,17 +1,17 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // För att kolla om vi är på en projektsida
+import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Hämta nuvarande URL
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full text-white shadow-md z-50 bg-black bg-opacity-80 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 w-full text-white shadow-md z-50 bg-[#0F1523] bg-opacity-80 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logotyp */}
         <Link href="/" className="font-semibold text-lg">

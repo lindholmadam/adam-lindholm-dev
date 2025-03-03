@@ -6,15 +6,12 @@ export default function About() {
     <section className="section text-white items-center">
       <div className="flex align-center justify-center flex-col">
         <FadeInWhenVisible>
-          <h2 className="h2-start">About me<span className="text-orange-500">.</span></h2>
+          <h2 className="h2-start">Get to know me</h2>
         </FadeInWhenVisible>
         <FadeInWhenVisible>
         <div className="flex flex-col lg:flex-row lg:gap-16">
-            <p className="max-w-2xl mx-auto decoration-[#dfdfdf]">
-            Hi, I'm a web developer with a background in computer and systems sciences and marketing communication. 
-            I'm passionate about technology, digital business, and how tech can drive both user experience and business growth. 
-            My interests lie at the intersection of development, marketing, and sales, where I enjoy finding solutions that bridge technical and strategic needs. 
-            With my mix of technical skills and business understanding, I’m working towards a role as a Solutions Architect, Pre-Sales Engineer, or Product Owner, where I can combine development with a broader strategic perspective.
+            <p className="max-w-3xl text-md/6 text-center mx-auto text-[17px] text-gray-300">
+            Hi, I'm a tech enthusiast with a passion for web development and a background in computer and systems sciences and marketing communication. I’m driven by how technology shapes digital business, user experience, and growth. My interests lie at the intersection of development, marketing, and sales, where I enjoy bridging technical and strategic needs. <br/> With my combined background in technology and communication, I thrive in roles that connect development, business, and user experience - solving technical challenges with a strategic mindset to create impactful digital solutions.
             </p>
         </div>
         </FadeInWhenVisible>

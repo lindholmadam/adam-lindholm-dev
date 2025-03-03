@@ -5,27 +5,8 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
-import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 
 export default function HomePage() {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash === "#projects") {
-        const section = document.getElementById("projects");
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    };
-
-    handleHashChange(); 
-    window.addEventListener("hashchange", handleHashChange); 
-
-    return () => window.removeEventListener("hashchange", handleHashChange); 
-  }, [pathname]); 
 
   return (
     <>
