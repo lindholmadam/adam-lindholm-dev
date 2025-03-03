@@ -1,5 +1,5 @@
 import TechGrid from "./TechGrid";
-import ProfileImage from "./ProfileImage";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 
 export default function About() {
   return (
@@ -15,8 +15,9 @@ export default function About() {
           With my mix of technical skills and business understanding, I’m working towards a role as a Solutions Architect, Pre-Sales Engineer, or Product Owner, where I can combine development with a broader strategic perspective.
           </p>
         </div>
-
+        <FadeInWhenVisible>
         <TechGrid />
+        </FadeInWhenVisible>
       
       </div>
 

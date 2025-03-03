@@ -1,16 +1,19 @@
 import ProjectCard from "@/components/ProjectCard";
 import CodePen from "@/components/CodePen";
 import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 
 
 
 export default function ProjectsIntro() {
   return (
     <section className="section text-white">
+      <FadeInWhenVisible>
       <h2 className="h2-start text-center">Featured Projects</h2>
       <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
         Here are some of the selected projects that showcase my passion for front-end development.
       </p>
+      </FadeInWhenVisible>
 
       <div className="flex flex-col gap-[90px]">
         <ProjectCard 
@@ -50,7 +53,9 @@ export default function ProjectsIntro() {
           githubLink="https://github.com/lindholmadam/adam-lindholm-dev"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
         />
-        <CodePen />
+        <FadeInWhenVisible>
+          <CodePen />
+        </FadeInWhenVisible>
       </div>
     </section>
   );

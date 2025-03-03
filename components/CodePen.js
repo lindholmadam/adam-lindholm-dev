@@ -4,7 +4,7 @@ import { FaCodepen } from "react-icons/fa";
 
 export default function CodePenIntro() {
   return (
-    <section className="section rounded-xl bg-gray-800 text-white max-h-[300px] items-center">
+    <section className="section rounded-xl bg-gray-800 text-white text-center max-h-[300px] items-center">
       <h3 className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-2">
         <FaCodepen className="text-white text-4xl sm:text-3xl" />
         Codepen snippets

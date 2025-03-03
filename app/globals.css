@@ -75,7 +75,7 @@ p {
 
 
 .no-interaction {
-  pointer-events: none; /* Gör att användaren inte kan klicka */
+  pointer-events: none;
 }
 
 
@@ -95,7 +95,7 @@ p {
 /* Project details container */
 .project-detail {
   display: flex;
-  flex-direction: column; /* Se till att innehållet staplas */
+  flex-direction: column;
   height: 100%;
   padding: 30px;
   border-radius: 10px;
@@ -107,10 +107,10 @@ p {
 
 /* Project details inner container */
 .project__detail-container {
-  flex-grow: 1; /* Gör så att den expanderar och fyller ut höjden */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Se till att knapparna hamnar längst ner */
+  justify-content: space-between; 
   height: 100%;
   width: 75%;
 }
@@ -171,9 +171,9 @@ p {
   .project-detail {
     width: 100%; /* Låt projektinformationen fylla ut under videon */
   }
-  .iframe-wrapper {
+  /* .iframe-wrapper {
     border-radius: 0px;
-    }
+    } */
 }
 
 

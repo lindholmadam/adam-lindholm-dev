@@ -45,7 +45,7 @@ export default function ScrollIndicator() {
   };
 
   return (
-    <div className="fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col gap-10 z-50">
+    <div className="hidden sm:flex fixed top-1/2 right-4 transform -translate-y-1/2 flex-col gap-10 z-50">
       {sections.map(({ id, label }, index) => (
         <a
           key={id}

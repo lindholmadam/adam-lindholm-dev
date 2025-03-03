@@ -4,6 +4,7 @@ import ProjectsIntro from "@/components/ProjectsIntro";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -34,13 +35,17 @@ export default function HomePage() {
         <Hero />
       </section>
       <section id="about" className="bg-gradient-to-b from-black to-gray-900 w-full">
+      <FadeInWhenVisible>
         <About />
+      </FadeInWhenVisible>
       </section>
       <section id="projects" className="bg-gradient-to-b from-gray-900 to-black w-full">
         <ProjectsIntro />
       </section>
       <section id="contact" className="bg-gradient-to-b from-black to-gray-900 w-full">
+      <FadeInWhenVisible>
         <Contact />
+      </FadeInWhenVisible>
       </section>
     </>
   );

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
-// import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 
 export default function ProjectCard({ 
   title, 
@@ -13,6 +13,7 @@ export default function ProjectCard({
 }) {
 
   return (
+    <FadeInWhenVisible>
     <section className="project-wrapper">
       
       <div className="project-content">
@@ -56,5 +57,6 @@ export default function ProjectCard({
 
       </div>
     </section>
+    </FadeInWhenVisible>
   );
 }
