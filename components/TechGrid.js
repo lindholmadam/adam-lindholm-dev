@@ -1,6 +1,6 @@
 import { FaJava, FaPython, FaReact, FaNodeJs, FaGit } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiBootstrap, SiMongodb, SiExpress, SiPostman, SiFigma, SiMysql, SiJavascript, SiShopify } from "react-icons/si";
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 const technologies = [
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },

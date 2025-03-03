@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import CodePen from "@/components/CodePen";
 import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 
 
@@ -25,7 +25,6 @@ export default function ProjectsIntro() {
           githubLink="https://github.com/lindholmadam/MERN-Authentication-System"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
         />
-
         <ProjectCard 
           title="E-commerce store"
           description="An automated e-commerce store built on Shopify, designed for efficiency with seamless product management, streamlined order processing, and a data-driven approach to marketing and sales."
@@ -53,9 +52,7 @@ export default function ProjectsIntro() {
           githubLink="https://github.com/lindholmadam/adam-lindholm-dev"
           techStack={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
         />
-        <FadeInWhenVisible>
           <CodePen />
-        </FadeInWhenVisible>
       </div>
     </section>
   );

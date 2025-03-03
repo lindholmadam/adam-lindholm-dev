@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaCodepen } from "react-icons/fa";
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 export default function CodePenIntro() {
   return (

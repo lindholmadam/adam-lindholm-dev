@@ -1,5 +1,5 @@
 import TechGrid from "./TechGrid";
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 export default function About() {
   return (
@@ -18,8 +18,8 @@ export default function About() {
             </p>
         </div>
         </FadeInWhenVisible>
+
         <TechGrid />
-      
       </div>
 
     </section>
