@@ -29,11 +29,13 @@ export default function Hero() {
 
       <div className="flex flex-col sm:w-1/2">
         <h1 className="text-xl mb-3">Hi, I'm</h1>
-        <h1 className="font-bold text-4xl mb-5">Adam Lindholm</h1>
+        <h1 className="header text-[2.75rem] md:text-[3rem]">Adam Lindholm</h1>
         <h1 className="text-sm md:text-md animate-slide-up mb-10 sm:mb-20 text-gray-300">
           Tech enthusiast with a passion for web development based in Stockholm, Sweden.
         </h1>
-        <SocialIcons/>
+        <div className="mt-1 mb-2">
+          <SocialIcons/>
+        </div>
       </div>
 
       <div className="flex justify-center sm:w-1/2">
@@ -47,10 +49,10 @@ export default function Hero() {
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <span className="animate-pulse text-gray-400 text-sm tracking-widest uppercase mb-2">
+        <span className="animate-pulse text-gray-600 text-sm tracking-widest uppercase mb-2">
           Scroll
         </span>
-        <div className="animate-pulse w-[1px] h-[7rem] bg-gray-600"></div>
+        <div className="animate-pulse w-[1px] h-[8rem] bg-gray-600"></div>
       </div>
     </section>
   );

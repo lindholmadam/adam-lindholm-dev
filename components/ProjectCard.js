@@ -70,9 +70,9 @@ export default function ProjectCard({
           </div>
 
           {/* Video eller Bild */}
-          <div className="project-preview relative">
+          <div className="project-preview md:rounded-lg relative">
             {youtubeId ? (
-              <div className="iframe-wrapper shadow-md shadow-gray-600/50">
+              <div className="iframe-wrapper">
                 <iframe
                   src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&playlist=${youtubeId}&controls=0&rel=0&modestbranding=1&playsinline=1`} 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -81,7 +81,7 @@ export default function ProjectCard({
                 ></iframe>
               </div>
             ) : (
-              <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden relative">
+              <div className="w-full aspect-video overflow-hidden relative">
                 <Image 
                   src={imageSrc} 
                   alt={title} 

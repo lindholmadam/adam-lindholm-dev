@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full text-white shadow-md z-50 bg-[#0F1523] bg-opacity-80 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logotyp */}
-        <Link href="/" className="font-semibold text-lg">
+        <Link href="/" className="header text-md">
           Adam Lindholm
         </Link>
 

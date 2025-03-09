@@ -10,7 +10,7 @@ export default function ProjectsIntro() {
     <section className="section text-white">
       <FadeInWhenVisible>
       <h2 className="h2-start text-center">Selected Projects</h2>
-      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 text-lg md:text-xl"> 
+      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 md:text-xl"> 
         A selection of projects showcasing my work in development and digital solutions.
       </p>
       </FadeInWhenVisible>

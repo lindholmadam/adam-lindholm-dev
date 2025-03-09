@@ -11,7 +11,7 @@ export default function CodePenIntro() {
         <FaCodepen className="text-white text-4xl sm:text-5xl mr-3" />
         Codepen snippets
       </h3>
-      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 text-lg md:text-xl">
+      <p className="text-center max-w-3xl mx-auto mb-10 text-gray-300 md:text-xl">
         Explore some of my earlier front-end experiments and mini-projects on CodePen.
       </p>
       <Link href="https://codepen.io/lindholmadam" target="_blank">
