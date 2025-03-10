@@ -63,7 +63,7 @@ export default function ScrollIndicator() {
 
           <span
             className={`absolute transition-all duration-300 ${
-              activeSection === id ? "opacity-100 translate-x-0 text-blue-500" : "opacity-0 -translate-x-3"
+              activeSection === id ? "opacity-100 translate-x-0 text-orange-400" : "opacity-0 -translate-x-3"
             }`}
           >
             {label}

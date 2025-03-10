@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.play-font {
+  font-family: 'Play', sans-serif;
+}
+
 p {
   @apply text-base;
   font-family: 'Open Sans', sans-serif;

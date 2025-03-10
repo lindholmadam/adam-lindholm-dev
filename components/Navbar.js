@@ -23,17 +23,17 @@ export default function Navbar() {
         </button>
 
         <ul className="hidden md:flex space-x-6">
-          <li><Link href="/#start" className="text-sm hover:text-blue-400">Start</Link></li>
-          <li><Link href="/#about" className="text-sm hover:text-blue-400">About</Link></li>
+          <li><Link href="/#start" className="text-sm hover:text-orange-400">Start</Link></li>
+          <li><Link href="/#about" className="text-sm hover:text-orange-400">About</Link></li>
           <li>
             <Link 
               href={pathname.startsWith("/projects/") ? "/#projects" : "#projects"} 
-              className="text-sm hover:text-blue-400"
+              className="text-sm hover:text-orange-400"
             >
               Projects
             </Link>
           </li>
-          <li><Link href="/#contact" className="text-sm hover:text-blue-400">Contact</Link></li>
+          <li><Link href="/#contact" className="text-sm hover:text-orange-400">Contact</Link></li>
         </ul>
       </div>
 
@@ -47,18 +47,18 @@ export default function Navbar() {
         </button>
 
         <ul className="flex flex-col items-center justify-center h-full space-y-6 text-lg">
-          <li><Link href="/" onClick={toggleMenu} className="hover:text-blue-400">Start</Link></li>
-          <li><Link href="/#about" onClick={toggleMenu} className="hover:text-blue-400">About</Link></li>
+          <li><Link href="/" onClick={toggleMenu} className="hover:text-orange-400">Start</Link></li>
+          <li><Link href="/#about" onClick={toggleMenu} className="hover:text-orange-400">About</Link></li>
           <li>
             <Link 
               href={pathname.startsWith("/projects/") ? "/#projects" : "#projects"} 
               onClick={toggleMenu} 
-              className="hover:text-blue-400"
+              className="hover:text-orange-400"
             >
               Projects
             </Link>
           </li>
-          <li><Link href="/#contact" onClick={toggleMenu} className="hover:text-blue-400">Contact</Link></li>
+          <li><Link href="/#contact" onClick={toggleMenu} className="hover:text-orange-400">Contact</Link></li>
         </ul>
       </div>
     </nav>

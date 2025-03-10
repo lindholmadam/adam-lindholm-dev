@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProfileImage() {
   return (
-    <div className="relative w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] rounded-full overflow-hidden border-4 border-white">
+    <div className="relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] rounded-full overflow-hidden border-4 border-white">
       <Image
         src="/profile-bAw2.png"
         alt="Adam Lindholm"
