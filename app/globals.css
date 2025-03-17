@@ -173,8 +173,13 @@ p {
     flex-direction: column-reverse; 
   }
 
+  .iframe-wrapper {
+    border-radius: 10px 10px 0px 0px;
+  }
+
   .iframe-wrapper iframe {
     top: 2px;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .project__detail-container {
