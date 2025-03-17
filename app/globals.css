@@ -211,7 +211,7 @@ p {
 .form-input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid rgb(193, 193, 193);
   display: block;
   width: 100%;
   padding: 12px 0;

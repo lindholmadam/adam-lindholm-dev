@@ -48,7 +48,7 @@ export default function ContactForm() {
       Got a question or proposal, or just want to say hello? Go ahead.
       </p>
 
-      <form onSubmit={handleSubmit} className="border border-gray-500 text-white p-8 rounded-lg w-full max-w-2xl mx-auto shadow-lg">
+      <form onSubmit={handleSubmit} className="border border-gray-600 text-white p-4 rounded-lg w-full max-w-2xl mx-auto shadow-lg">
         <div className="relative mb-6">
           <input
             type="text"
